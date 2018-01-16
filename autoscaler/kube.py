@@ -20,7 +20,7 @@ _CORDON_LABEL = 'openai/cordoned-by-autoscaler'
 
 
 class KubePod(object):
-    _DRAIN_GRACE_PERIOD = datetime.timedelta(seconds=60*60)
+    _DRAIN_GRACE_PERIOD = datetime.timedelta(seconds=60)
 
     def __init__(self, pod):
         self.original = pod
